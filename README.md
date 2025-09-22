@@ -138,7 +138,7 @@ Published topics for RViz2:
 ## 📁 Files
 
 - `sensor_fusion_node.py`: Main ROS2 node  
-- `sensor_subscribers.py`: Main ROS2 node  
+- `sensor_subscribers.py`: Script which subscribes to sensor nodes   
 - `AdaptiveEFK.py`: EKF implementation  
 - `fusion_log.csv`: Logged state estimates  
 
