@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('fusion_log.csv')
 
-# Convert Series to NumPy arrays
+# Convert Series to NumPy arrays to plot
 x = df['px'].to_numpy()
 y = df['py'].to_numpy()
 

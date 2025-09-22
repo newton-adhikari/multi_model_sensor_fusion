@@ -138,8 +138,32 @@ Published topics for RViz2:
 ## 📁 Files
 
 - `sensor_fusion_node.py`: Main ROS2 node  
+- `sensor_subscribers.py`: Main ROS2 node  
 - `AdaptiveEFK.py`: EKF implementation  
 - `fusion_log.csv`: Logged state estimates  
+
+---
+
+---
+
+## 🚀 Launching the Simulation
+
+After building the workspace, you can launch the full system using:
+
+```bash
+ros2 launch multi_model_sensor_fusion multi_model_sensor_fusion.launch.py
+```
+
+Before running any standalone scripts, make sure they are executable:
+```bash
+chmod +x src/multi_model_sensor_fusion/sensor_subscribers.py
+chmod +x src/multi_model_sensor_fusion/plot_trajectory.py
+```
+
+```bash
+./src/multi_model_sensor_fusion/sensor_subscribers.py
+./src/multi_model_sensor_fusion/plot_trajectory.py
+```
 
 ---
 

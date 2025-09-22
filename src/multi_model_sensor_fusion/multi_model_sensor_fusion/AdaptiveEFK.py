@@ -43,7 +43,7 @@ class AdaptiveEKF:
         self.P = F @ self.P @ F.T + self.Q
 
     def update_lidar(self, p_lidar):
-        # Measurement matrix: only position
+        # Measurement matrix: we used only position
         H = np.zeros((3, 6))
         H[:, :3] = np.eye(3)  # only position measured
 

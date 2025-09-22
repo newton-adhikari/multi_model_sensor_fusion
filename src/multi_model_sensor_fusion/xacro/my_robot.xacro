@@ -73,7 +73,6 @@
     <axis xyz="0 1 0"/>
   </joint>
 
-  <!-- Transmissions (optional for Gazebo diff_drive, safe to keep) -->
   <transmission name="left_wheel_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="left_wheel_joint">
