@@ -81,12 +81,12 @@ $$
 
 Where:
 
-- \( \mathbf{z} \): LiDAR measurement  
-- \( H \): Measurement matrix  
-- \( P \): State covariance  
-- \( R \): Measurement noise covariance  
-- \( \mathbf{K} \): Kalman gain  
-- \( \mathbf{y} \): Innovation (residual)  
+- $\\mathbf{z}$: LiDAR measurement  
+- $H$: Measurement matrix  
+- $P$: State covariance  
+- $R$: Measurement noise covariance  
+- $\\mathbf{K}$: Kalman gain  
+- $\\mathbf{y}$: Innovation (residual)
 
 ---
 
@@ -95,14 +95,11 @@ Where:
 Noise covariances are dynamically scaled:
 
 - **Process noise**:  
-  $$
-  Q \propto \|\mathbf{a}_{\text{IMU}}\|
-  $$
+  $Q \propto \|\\mathbf{a}_{\\text{IMU}}\|$
 
 - **Measurement noise**:  
-  $$
-  R \propto \frac{1}{\|\mathbf{z}_{\text{LiDAR}}\|}
-  $$
+  $R \propto \\frac{1}{\|\\mathbf{z}_{\\text{LiDAR}}\|}$
+
 
 This improves robustness under varying sensor conditions.
 
